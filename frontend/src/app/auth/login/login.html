@@ -1,0 +1,80 @@
+<div class="login-container">
+
+  <div class="left-panel">
+
+    <img
+      src="/images/logo-ucacue.png"
+      alt="UCACUE"
+      class="logo">
+
+    <h1>Universidad Católica de Cuenca</h1>
+
+    <h2>Sistema de Gestión de Mantenimiento</h2>
+
+    <p>
+      Administración y control del mantenimiento
+      de equipos médicos.
+    </p>
+
+    <div class="line"></div>
+
+    <span class="version">
+      Versión 1.0
+    </span>
+
+  </div>
+
+  <div class="right-panel">
+
+    <div class="login-card">
+
+      <h3>Iniciar Sesión</h3>
+
+      <p class="subtitle">
+        Bienvenido nuevamente
+      </p>
+
+      <div class="input-group">
+
+        <label>Correo electrónico</label>
+
+        <input
+          type="email"
+          [(ngModel)]="email"
+          placeholder="correo@ucacue.edu.ec">
+
+      </div>
+
+      <div class="input-group">
+
+        <label>Contraseña</label>
+
+        <input
+          type="password"
+          [(ngModel)]="password"
+          placeholder="Ingrese su contraseña">
+
+      </div>
+
+      <button (click)="login()">
+        Iniciar Sesión
+      </button>
+
+      <small>
+        © 2026 Universidad Católica de Cuenca
+      </small>
+
+    </div>
+
+  </div>
+  <div class="register-link">
+
+  ¿No tienes una cuenta?
+
+  <a routerLink="/register">
+    Crear usuario
+  </a>
+
+</div>
+
+</div>

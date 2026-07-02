@@ -1,0 +1,81 @@
+<div class="login-container">
+
+  <div class="left-panel">
+
+    <img
+      src="/images/logo-ucacue.png"
+      class="logo"
+      alt="UCACUE">
+
+    <h1>Universidad Católica de Cuenca</h1>
+
+    <h2>Sistema de Gestión de Mantenimiento</h2>
+
+    <p>
+      Cree una cuenta para acceder al sistema de administración
+      de equipos médicos.
+    </p>
+
+  </div>
+
+  <div class="right-panel">
+
+    <div class="login-card">
+
+      <h3>Crear Usuario</h3>
+
+      <p class="subtitle">
+        Complete la siguiente información
+      </p>
+
+      <div class="input-group">
+
+        <label>Nombre completo</label>
+
+        <input
+          type="text"
+          [(ngModel)]="name">
+
+      </div>
+
+      <div class="input-group">
+
+        <label>Correo electrónico</label>
+
+        <input
+          type="email"
+          [(ngModel)]="email">
+
+      </div>
+
+      <div class="input-group">
+
+        <label>Contraseña</label>
+
+        <input
+          type="password"
+          [(ngModel)]="password">
+
+      </div>
+
+      <button (click)="register()">
+
+        Crear cuenta
+
+      </button>
+
+      <div class="register-link">
+
+        ¿Ya tienes una cuenta?
+
+        <a routerLink="/">
+          Iniciar sesión
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
